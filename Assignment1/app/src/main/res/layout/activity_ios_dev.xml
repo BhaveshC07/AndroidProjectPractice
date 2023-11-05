@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".iosDev">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_height="75dp"
+        android:text="There are only two types of Languages in IOS development" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="1.Swift" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="2.Objective C" />
+</LinearLayout>
