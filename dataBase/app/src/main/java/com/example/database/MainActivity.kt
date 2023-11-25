@@ -1,5 +1,6 @@
 package com.example.database
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -15,13 +16,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+0
         val signupbtn=findViewById<Button>(R.id.btnSignUp)
         val etName=findViewById<EditText>(R.id.etName)
         val etMail=findViewById<EditText>(R.id.etMail)
         val etUserName=findViewById<EditText>(R.id.etUserName)
         val etPassword=findViewById<EditText>(R.id.etPass)
-
+        val signinbtn1=findViewById<Button>(R.id.btnSignIn1)
         signupbtn.setOnClickListener{
             val name=etName.text.toString()
             val mail=etMail.text.toString()
@@ -40,6 +41,10 @@ class MainActivity : AppCompatActivity() {
             }.addOnSuccessListener {
                 Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
             }
+        }
+        signinbtn1.setOnClickListener{
+            val intent1= Intent(this,SignInActivity::class.java)
+            startActivity(intent1)
         }
     }
 }
