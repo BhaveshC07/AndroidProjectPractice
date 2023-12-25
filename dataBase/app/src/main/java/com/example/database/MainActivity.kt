@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-0
         val signupbtn=findViewById<Button>(R.id.btnSignUp)
         val etName=findViewById<EditText>(R.id.etName)
         val etMail=findViewById<EditText>(R.id.etMail)
